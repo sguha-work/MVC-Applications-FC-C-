@@ -9,7 +9,7 @@
 <body>
     <div>
        
-        <asp:Literal ID="literal_1"> <%= ViewBag.displayHTML %> </asp:Literal>
+         <%= ViewBag.displayHTML %>
     </div>
 </body>
 </html>
