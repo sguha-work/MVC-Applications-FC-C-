@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WorldPopulationModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="WorldPopulationEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="WorldPopulations" EntityType="WorldPopulationModel.WorldPopulation" />
+  </EntityContainer>
+  <EntityType Name="WorldPopulation">
+    <Key>
+      <PropertyRef Name="CountryName" />
+    </Key>
+    <Property Name="CountryName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Population" Type="Int64" />
+  </EntityType>
+</Schema>

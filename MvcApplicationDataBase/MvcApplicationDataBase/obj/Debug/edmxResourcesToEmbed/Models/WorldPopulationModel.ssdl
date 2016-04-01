@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WorldPopulationModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="WorldPopulationModelStoreContainer">
+    <EntitySet Name="WorldPopulation" EntityType="WorldPopulationModel.Store.WorldPopulation" store:Type="Tables" store:Schema="dbo" store:Name="WorldPopulation">
+      <DefiningQuery>SELECT 
+      [WorldPopulation].[CountryName] AS [CountryName], 
+      [WorldPopulation].[Population] AS [Population]
+      FROM [dbo].[WorldPopulation] AS [WorldPopulation]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'DCB08CF26A23B0977AF2AFC06FE1785A_C-APPLICATIONS-FC-C#\MVCAPPLICATIONDATABASE\MVCAPPLICATIONDATABASE\APP_DATA\WORLDPOPULATION.MDF.dbo.WorldPopulation' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="WorldPopulation">
+    <Key>
+      <PropertyRef Name="CountryName" />
+    </Key>
+    <Property Name="CountryName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Population" Type="bigint" />
+  </EntityType>
+</Schema>
