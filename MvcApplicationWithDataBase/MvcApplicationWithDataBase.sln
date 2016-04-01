@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Web
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplicationDataBase", "MvcApplicationDataBase\MvcApplicationDataBase.csproj", "{95F59B2B-AA26-4552-B0A7-B2AEB1F5BA99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplicationWithDataBase", "MvcApplicationDataBase\MvcApplicationWithDataBase.csproj", "{95F59B2B-AA26-4552-B0A7-B2AEB1F5BA99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
