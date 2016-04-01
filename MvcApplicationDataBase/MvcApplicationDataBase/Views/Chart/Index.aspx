@@ -5,10 +5,11 @@
 <html>
 <head runat="server">
     <title>Chart</title>
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
 </head>
 <body>
     <div>
-        hello
+       <%= ViewBag.displayHTML %>
     </div>
 </body>
 </html>
